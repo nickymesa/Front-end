@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>INGRESO PRODUCTO</title>
+    <link rel="icon" href="imagenes/Icon.jfif">
+    
+    <style>
+        form .button input {
+            width: 100%;
+            height: 100%;
+            outline: none;
+            cursor: pointer;
+            background: linear-gradient(130deg, white, red);
+            color: #fff;
+            font-size: 16px;
+            font-weight: 500;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="tittle">Producto</div>
+        <form id="form-validation" novalidate>
+            <div class="form-group">
+                <span>Código Producto</span>
+                <input type="text" placeholder="Código Producto" required>
+                <small>Por favor ingrese código</small>
+            </div>
+            <div class="form-group">
+                <span>Nombre Producto</span>
+                <input type="text" placeholder="Ingrese Nombre Producto" required>
+                <small>Por favor ingrese nombre producto</small>
+            </div>
+            <div class="form-group">
+                <span>Descripción</span>
+                <input type="text" placeholder="Ingrese Descripción Producto" required>
+                <small>Por favor ingrese descripción</small>
+            </div>
+            <div class="form-group">
+                <span>Categoría</span>
+                <input type="text" placeholder="Ingrese Categoría Producto" required>
+                <small>Por favor ingrese categoría</small>
+            </div>
+            <div class="form-group">
+                <span>Ubicación</span>
+                <input type="text" placeholder="Ingrese Ubicación Producto" required>
+                <small>Por favor ingrese ubicación</small>
+            </div>
+            <div class="form-group">
+                <span>Proveedor</span>
+                <input type="text" placeholder="Ingrese Proveedor Producto" required>
+                <small>Por favor ingrese proveedor</small>
+            </div>
+            <div class="button">
+                <input type="submit" value="ENVIAR">
+            </div>
+        </form>
+    </div>
+
+    <script src="js/productos.js"></script>
+</body>
+
+</html>

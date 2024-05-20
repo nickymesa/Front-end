@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Almacenes NICK</title>
+    <link rel="icon" href="imagenes/Icon.jfif">
+    <link rel="stylesheet" href="css/login.css">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</head>
+<body>
+    <div class="contenedor">
+    
+        <div class="cabe">
+            <div class="logocenter">
+                <div class="logo">
+                </div>
+            </div>
+        </div>
+        <div class="principal">
+            <div class="autenticar">
+                <div class="conttitulo">
+                    <div class="titulo">
+                        <h1>Ingresa a tu Almacen</h1>
+                        <h1>virtual</h1>
+                    </div>
+                </div>
+                <div class="contenido">
+                    <div class="caja">
+                        <div class="izq">
+                            <form autocomplete="off" id="fusuario">
+                                <div class="inputg columna">
+                                    <label for="usuario">👤</label>
+                                    <input type="text" name="usuario" id="usuario" placeholder="Nombre de usuario" maxlength="12" />
+                                    
+                                    <div class="error" id="eUsuario">
+                                        <img src="img/war.svg" alt="error"> <span class="rojo">Ingresa un nombre de usuario que contenga entre 6 a 12 caracteres y sin caracteres especiales</span>
+                                    </div>
+                                </div>
+                                <div class="inputg columna">
+                                    <div style="text-align: right;" class="ojos">
+                                        <img src="img/ojo.svg" alt="ojo" id="ojo" style="display: none;">
+                                    </div>
+                                    <label for="contra">🔒</label>
+                                    <input style="width: 100%;" type="password" name="contra" id="contra" placeholder="Contraseña" maxlength="15" class="contrasena" />
+                                    <div class="vali" style="display: none;" id="validaciones">
+                                        <span id="cantidad">8+ caracteres</span>
+                                        <span id="mayus">1+ mayuscula</span>
+                                        <span id="minus">1+ minúscula</span>
+                                        <span id="numero">1+ número</span>
+                                    </div>
+                                </div>
+                                <div class="inputge">
+                                    <a href="javascript:void(0)" class="enlacef" style="margin-top: 7px;">¿Necesitas ayuda para ingresar?</a>
+                                </div>
+
+                                <div class="inputche">
+                                    <input type="checkbox" name="record" id="record" />
+                                    <label for="record">Recordar mi nombre de usuario</label>
+                                </div>
+                                <div class="inputgb">
+                                    <button type="button" id="btnusuario" class="btn">Ingresar</button>
+                                </div>
+                                <div class="inputg inicio">
+                                    <p style="margin-bottom: 5px;">¿No te has registrado?</p>
+                                    <a href="javascript:void(0)" class="enlacef">Registrate ahora</a>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="der">
+                            <img src="imagenes/Logo.jpg" alt="Alamcen" width="150px" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pie">
+            <div class="piecenter">
+                <p class="derec">
+                © 2024 Todos los Derechos Reservados
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("btnusuario").addEventListener("click", function() {
+            var usuario = document.getElementById("usuario").value;
+            var contrasena = document.getElementById("contra").value;
+            
+            // Aquí podrías agregar una validación de usuario y contraseña antes de redireccionar
+            
+            // Redirecciona a bajar_productos.html
+            window.location.href = "ingresar_productos.html";
+        });
+    </script>
+</body>
+</html>

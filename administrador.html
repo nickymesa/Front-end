@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Administrador</title>
+    <link rel="stylesheet" href="Administrador-style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="img/logo.png" type="image/png">
+    <style>
+    .options {
+        display: none;
+        position: absolute;
+        top: 40px;
+        /* Ajusta la posición vertical según tu diseño */
+        left: 10px;
+        /* Ajusta la posición horizontal según tu diseño */
+        background: #fff;
+        border: 1px solid red;;
+        padding: 10px;
+        z-index: 1;
+    }
+    body {
+            display: flex;
+            height: 100vh;
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin: 0;
+            padding: 0;
+            background: url('imagenes/fondo3.avif') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+    .options a {
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+        color: red;
+        /* Corregido el color aquí */
+    }
+
+    .options a:hover {
+        background-color: #000000;
+        color: #fff;
+    }
+
+    /* Estilo para el botón de opciones */
+    #show-options-button {
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        background: #d42b2b;
+        color: #fff;
+        padding: 10px 15px;
+        cursor: pointer;
+        border: none;
+        border-radius: 50%;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="login-content">
+            <!-- Opciones ocultas por defecto -->
+            <div class="options" id="options">
+                <a href="ingresar_productos.html">Agregar productos</a>
+                <a href="bajar_producto.html">Bajar productos</a>
+            </div>
+
+            <!-- Botón o ícono para mostrar opciones -->
+            <button id="show-options-button" onclick="toggleOptions()"><i class='bx bx-down-arrow'></i></button>
+        </div>
+    </div>
+
+    <script>
+
+    function toggleOptions() {
+        var options = document.getElementById('options');
+        if (options.style.display === 'block') {
+            options.style.display = 'none';
+        } else {
+            options.style.display = 'block';
+        }
+    }
+    </script>
+</body>
+
+</html>
